@@ -1,0 +1,194 @@
+@import './_variables.scss';
+@import './_main.scss';
+@import './_header.scss';
+@import './_buttons.scss';
+@import './_episodios.scss';
+@import './_entrevistas.scss';
+@import './_nosotros.scss';
+@import './_topicos.scss';
+@import './_fin.scss';
+@import './_footer.scss';
+
+/* -----------------------------------RESPONSIVENESS---------------------------- */
+
+@media (min-width: 768px) {
+
+  h1{
+    font-size: 64px;
+    margin-left: 13.9%;
+  }
+  h2{
+    font-size: 48px;
+    margin-left: 13.9%;
+  }
+
+  p{
+    margin-left: 13.9%;
+  }
+
+
+  #welcome::after{
+    content: ".";
+    color: $color-highlight-primary;
+  }
+
+  .mobile-break { 
+    display: none; 
+  }
+
+  .content-mobile {
+    display: none;
+  }
+  .content-desktop{
+    display: block;
+  }
+
+  button{
+    padding: 0.4% 4.1% ;
+    margin-left: 13.9%;
+
+  }
+
+  #inicio{
+   
+  position: relative;
+  /* height: 350px; */
+  height: 20vw;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%);
+  z-index: 2;
+  }
+
+  #episodios{
+    margin-top: -20vw;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+    z-index: -40;
+    /* height: 1250px; */
+    height: 80vw;
+  }
+
+  #episodios h2{
+    padding: 300px 0 40px 0;
+  }
+
+  
+
+  .item1, .item3 {
+    grid-column: 2;
+  }
+
+  .item2, .item4 {
+    grid-column: 4;
+  }
+
+  iframe{
+  /* width:584px;
+  height:232px; */
+  width:40.6vw;
+  /* height:232px; */
+  padding-bottom: 20px;
+  }
+
+/* ---------NOSOTROS---------------- */
+  .item5{
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .item6{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: start;
+    justify-self: start;
+    transform:translateX(-30%);
+    
+  }
+
+  /* -----------ENTREVISTAS----------- */
+
+  .overlap{
+  
+    margin-bottom: -10%;
+  }
+
+  .gallery{
+    flex-direction: row;
+  }
+  .img1{
+   
+    height: 9.3%;
+    width: 33.33%;
+  }
+
+  /* -------TOPICOS---------------- */
+ 
+
+  .grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 16.667%);
+  grid-gap: 10px;
+ 
+  padding: 10px;
+}
+
+.grid-container > div {
+
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.i1, .i5 {
+  grid-column: 2 / 3;
+
+ 
+}
+.i2, .i6 {
+  grid-column: 3 / 4;
+}
+.i3, .i7 {
+  grid-column: 4 / 5;
+}
+.i4, .i8 {
+  grid-column: 5 / 6;
+}
+
+
+ 
+
+.i5, .i6, .i7, .i8  {
+  grid-row: 2;
+ 
+}
+
+/* fin */
+
+.flexcontainer button{
+  max-width: 30%;
+  align-self: center;
+}
+
+
+
+/* footer */
+ 
+footer{
+  margin: 0;
+  padding:20px;
+  display: flex;
+  height: 20px;
+}
+footer p{
+  margin-right: auto;
+  padding:0;
+  margin-left: 0;
+}
+
+#icon-bar{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+
+}

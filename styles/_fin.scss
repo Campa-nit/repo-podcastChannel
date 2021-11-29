@@ -1,0 +1,29 @@
+/* -------------FIN----------------------*/
+
+#fin{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    /* margin-top: -20vw; */
+    clip-path: polygon(0 37%, 100% 21%, 100% 100%, 0% 100%);
+    text-align: center;
+    z-index: -40;
+    /* height: 1250px; */
+    height: 58%;
+    margin-top: -50px;
+    /* margin-bottom: 70px; */
+}
+
+.flexcontainer{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+
+
+
+
+#fin h2{
+  padding-top: 200px;
+  
+}

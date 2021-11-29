@@ -1,0 +1,59 @@
+/*------------------------------- SECTION: "EPISODIOS" --------------------------*/
+#episodios{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    margin-top: -20vw;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+    z-index: -40;
+    /* height: 1250px; */
+    height: 370vw;
+}
+
+#episodios h2{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.light{
+    color: $color-light;
+    font-weight: 100;
+}
+
+#inicio{
+   
+  position: relative;
+  /* height: 350px; */
+  height: 105vw;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  z-index: 2;
+  /* change the calc height to a percentage height to get alternate responsive behavior*/
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 6.9% 40.6% 5% 40.6% 6.9%;
+  grid-template-rows: repeat (4, 25%);
+  justify-items: center;
+  align-items: center;
+}
+
+.item1, .item2, .item3, .item4{
+  grid-column: 2/span 3;
+  
+}
+
+
+.item1, .item3 {
+  justify-content: right;   
+}
+
+.item2, .item4{
+  justify-content: left;
+  
+}
+iframe{
+  width:298px;
+  height:250px;
+
+                
+}
